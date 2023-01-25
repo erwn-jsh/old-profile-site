@@ -1,0 +1,16 @@
+body, body h1, body h2, body h3, body a{
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.property-card{
+      cursor: pointer;
+  }
+
+.white-headers{
+    color: white;
+}
+
+.no-hover:hover{
+    text-decoration: none !important;
+}

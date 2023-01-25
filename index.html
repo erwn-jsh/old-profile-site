@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!-- Created by: Erwin Joshua Manuel - Created on: Jan 14, 2020 -->
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Erwin Joshua Manuel - Home Page</title>
+
+	<!-- Bootstrap 4 CSS -->
+	<link rel="stylesheet" 
+		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+		  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+		  crossorigin="anonymous">
+
+  	<!-- UIKit CSS -->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
+
+
+    <!-- CSS Removes Underline on a tag Hover -->
+    <style type="text/css">
+        a:hover{
+            text-decoration: none !important;
+        }
+    </style>
+
+	<!-- FAVICON LINK -->
+	<link rel="icon" href="resources/favicons/personIcon.png" type="image/png">
+</head>
+<body>
+	<header style="background-color: #464648; ">
+		<div id="Header" class="uk-container">
+            <a href="https://www.centennialcollege.ca/" target="_blank">
+                <h1 class="text-uppercase mt-3 mb-0 text-bold text-white"><strong>Centennial College</strong></h1>
+            </a>
+            <a href="https://www.centennialcollege.ca/programs-courses/schools/school-of-engineering-technology-and-applied-science/" target="_blank">
+                <h3 class="text-uppercase mb-3 mt-0 text-white" style="color: #D4E038 !important;">School of Engineering Technology and Applied Science</h3>
+            </a>
+		</div>
+	</header>
+
+
+    <div class="bg-light" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-container navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Introduction" uk-scroll>Start Here! <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#thingsILike" uk-scroll>Things I Like</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#Work" uk-scroll>Past Projects</a>
+					</li> -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Past Projects
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#ConAreas" uk-scroll>Conservation Areas</a>
+						  	<a class="dropdown-item" href="#AsCan" uk-scroll>Aston Martin Canada</a>
+							<a class="dropdown-item" href="#CentForm" uk-scroll>Centennial College Form</a>
+							<a class="dropdown-item" href="#AustinRE" uk-scroll>Austin Peaks RE Agenecy</a>
+							<a class="dropdown-item" href="#CalcBMI" uk-scroll>BMI Calculator</a>
+							<a class="dropdown-item" href="#TabGen" uk-scroll>Table Generator</a>
+							<a class="dropdown-item" href="#ConfiMuseum" uk-scroll>The Confinement Museum</a>
+						</div>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact" uk-scroll>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+
+	<div id="Video" class="" uk-parallax="bgy: -200">
+        <div class="position-absolute w-100 h-100" style="margin-top: 18%; margin-bottom: 18%">
+            <div class="uk-container" uk-scrollspy="cls: uk-animation-fade; target: .col-sm, .display-4; delay: 500; repeat: false">
+                <!-- Not Responsive -->
+                <div class="row">
+                    <div class="col-sm"></div>
+                    <div class="col-sm">
+                        <div style="border: 3px; border-style: solid; border-color: #D4E038 !important;" class="mx-3"> 
+                            <h1 class="display-4 text-center my-0" style="color: #D4E038">Student</h1>
+                            <h1 class="display-4 text-center my-0" style="color: #D4E038">Innovator</h1>
+                            <h1 class="display-4 text-center uk-text-bold mt-5" style="color: #D4E038">Coder</h1> 
+                        </div>
+                    </div>
+                    <div class="col-sm"></div>
+                </div>
+            </div>          
+        </div>        
+        <video src="resources/Laptop.mp4" type="video/mp4" muted autoplay loop>
+    </div>
+		
+
+	<div style="background-color: #D4E038">
+		<div id="Introduction" class="uk-container py-5" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			<h1 class="text-center my-0 pt-4 uk-text-bold">Start Here!</h1>
+			<p class="lead text-bolder">Student ID: 301107750</p>
+			<p class="text-justify lead my-0">I'm Erwin Joshua Manuel and I'm first year first semester student at Centennial College, majoring in Software Engineering. Previously I studied in Asian College of Technology for my Associate in Computer Technlogy Degree. It's been a very long journey but I still find it fun. As you can see, all of this is still a work in progress. If you have any suggestions or advice to make it prettier or to improve the code or whatever aspect, please feel free to contact me. I'll be glad to pay for the your next cup of coffee. </p>
+
+            <p class="lead mt-5">One of my favorite quotes is:</p>
+            <blockquote class="blockquote pb-4">
+                &quot;Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.&quot;
+                <footer class="blockquote-footer">Brian Kernighan </footer>
+            </blockquote>
+
+		</div>
+	</div>
+
+
+	<div id="thingsILike" class="uk-container mb-5">
+		<h1 class="text-center my-5 pt-4 uk-text-bold" uk-scrollspy="cls:uk-animation-fade; repeat: true ">Some of the Things I Like:</h1>
+		<div class="uk-child-width-expand@s uk-text-center uk-grid-small" uk-grid uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
+    		<div>
+        		<div class="uk-card uk-card-hover uk-card-default">
+        			<div class="uk-card-media-top">
+        				<img src="https://unsplash.com/photos/OQSCtabGkSY/download?force=true">
+        			</div>
+        			<div class="uk-card-body lead">
+        				Reading
+        			</div>
+        		</div>
+    		</div>
+    		<div>
+        		<div class="uk-card uk-card-hover uk-card-default">
+        			<div class="uk-card-media-top">
+        				<img src="https://unsplash.com/photos/jbQvJx2EWnU/download?force=true">
+        			</div>
+        			<div class="uk-card-body lead">
+        				Travelling
+        			</div>
+        		</div>
+    		</div>
+    		<div>
+        		<div class="uk-card uk-card-hover uk-card-default">
+        			<div class="uk-card-media-top">
+        				<img src="https://unsplash.com/photos/1m2LQEonm2A/download?force=true">
+        			</div>
+        			<div class="uk-card-body lead">
+        				Meeting New People 
+        			</div>
+        		</div>
+    		</div>
+		</div>
+
+		<div class="uk-child-width-expand@s uk-text-center uk-grid-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true" uk-grid>
+    		<div>
+        		<div class="uk-card uk-card-hover uk-card-default">
+        			<div class="uk-card-media-top">
+        				<img src="https://unsplash.com/photos/-YHSwy6uqvk/download?force=true">
+        			</div>
+        			<div class="uk-card-body lead">
+        				Good Food
+        			</div>
+        		</div>
+    		</div>
+    		<div>
+        		<div class="uk-card uk-card-hover uk-card-default">
+        			<div class="uk-card-media-top">
+        				<img src="https://unsplash.com/photos/SYTO3xs06fU/download?force=true">
+        			</div>
+        			<div class="uk-card-body lead">
+        				Tech
+        			</div>
+        		</div>
+    		</div>
+    		<!-- <div>
+        		<div class="uk-card uk-card-hover uk-card-default">
+        			<div class="uk-card-media-top">
+        				<img src="https://unsplash.com/photos/ZzWsHbu2y80/download?force=true">
+        			</div>
+        			<div class="uk-card-body">
+        				items
+        			</div>
+        		</div>
+    		</div> -->
+		</div>
+	</div>
+
+    <div id="Work" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+        <div style="background-color: black;">
+            <h1 class="text-center uk-text-bold text-white display-4" style="padding-top: 8% !important;">Past Projects</h1>
+            <div uk-scrollspy="cls:uk-animation-fade; repeat: true">
+                <img class="image" src="https://unsplash.com/photos/u76CN5rZeOU/download?force=true">
+            </div>
+
+            <div class="text-white uk-container" uk-scrollspy="cls: uk-animation-fade; target: .uk-panel; delay: 300; repeat: true">
+                <div id="ConAreas" class="uk-panel py-5">
+                    <img  class="uk-align-left mt-4" width="485px" height="360px" src="resources/Assignment2ScreenShot.png">
+					<p class="display-4">Conservation Areas</p>
+					<p>Created On: January 22, 2020</p>
+                    <p class="mb-3 text-justify">We were assigned to create a webpage on the topic of natural conservation areas around the world. For this project, I opted to create a site themed on the top five marine conservation sites. Here, I made an interactive map with MapHub then added a couple of links.
+					</p>
+                    <a class="uk-button uk-button-primary uk-align-right" href="assignment2.html" target="_blank">Check This Out!</a>
+                </div>
+                <div id="AsCan" class="uk-panel py-5">
+                    <img  class="uk-align-right mt-4" width="485px" height="360px" src="resources/Assignment3ScreenShot.png">
+                    <p class="display-4">Aston Martin Canada</p>
+                    <p>Created On: February 12, 2020</p>
+                    <p class="text-justify">In this project, we were assigned to create a webpage for a product that we were really interested in. What immediately came to mind was Aston Martin, the maker of luxury sports cars. Here I got stock some stock footage then used them as triggers for modals that contained the car details.</p>
+                    <a class="uk-button uk-button-primary uk-align-left" href="assignment3.html" target="_blank">Check This Out!</a>
+                </div>
+                <div id="CentForm" class="uk-panel py-5">
+                    <img  class="uk-align-left" width="485px" height="360px" src="resources/Assignment4ScreenShot.png">
+					<p class="display-4">Centennial College Form</p>
+					<p>Created On: March 12, 2020</p>
+                    <p class="text-justify">Here we were assigned to create an online version of a form. Notable elements include a side navigation bar that follows the user as he/she scrolls down. Section Titles too are highlighted as the browser viewport scrolls down, making a dynamic responsive experience.</p>
+                    <a class="uk-button uk-button-primary uk-align-right" href="assignment4.html" target="_blank">Check This Out!</a>
+				</div>
+				<div id="AustinRE" class="uk-panel py-5">
+                    <img  class="uk-align-right mt-4" width="485px" height="360px" src="resources/Assignment5ScreenShot-Final.png">
+                    <p class="display-4">Austin Peaks RE Agency</p>
+                    <p>Created On: April 9, 2020</p>
+                    <p class="text-justify">For the final project for semester 1, we were told to make a modern, airy looking website for an imaginary real estate agent. In this site, I opted to combine elements from previous projects together. Maphub and full-page modals once again made an appearance.</p>
+                    <a class="uk-button uk-button-primary uk-align-left" href="term-project.html" target="_blank">Check This Out!</a>
+				</div>
+				<div id="CalcBMI" class="uk-panel py-5">
+                    <img  class="uk-align-left" width="485px" height="360px" src="resources/Assignment6ScreenShot.png">
+					<p class="display-4">BMI CALCULATOR</p>
+					<p>Created On: June 10, 2020</p>
+                    <p class="text-justify">For the first project in the second semester, we were tasked to create  a BMI calculator with our knowledge in Javascript. Here I opted to use jQuery to create most of the dynamic functionality for this applet. In addition I also added a daily caloric calculator.</p>
+                    <a class="uk-button uk-button-primary uk-align-right" href="#modal-center"  uk-toggle>Check This Out!</a>
+				</div>
+				<div id="TabGen" class="uk-panel py-5">
+                    <img  class="uk-align-right mt-4" width="485px" height="360px" src="resources/Assignment7ScreenShot.png">
+                    <p class="display-4">Table Generator</p>
+                    <p>Created On: June 15, 2020</p>
+                    <p class="text-justify">Here, we were tasked to use our knowledge of Javascript (although jQuery was also uesd) in order to generate a table. To do so, a for loop had to be created with the capability of printing out the HTML code directly.</p>
+                    <a class="uk-button uk-button-primary uk-align-left" href="sem2Assignment2.html" target="_blank">Check This Out!</a>
+				</div>
+				<div id="ConfiMuseum" class="uk-panel py-5">
+                    <img  class="uk-align-left mt-4" width="485px" height="360px" src="resources/Assignment8ScreenShot.png">
+                    <p class="display-4">The Confinement Museum</p>
+                    <p>Created On: July 2, 2020</p>
+                    <p class="text-justify">In this project, we were given the opportunity to design any site that we wanted. To honest, there was not much of a clear idea. The first thing that came to mind was to create a museum of some sorts to commemorate the outbreak....</p>
+                    <a class="uk-button uk-button-primary uk-align-left" href="sem2Assignment3/Home.html" target="_blank">Check This Out!</a>
+				</div>
+            </div>
+        </div>
+        
+
+    </div>
+
+	<div style="background-color: #D4E038">
+		<div id="Contact" class="uk-container py-5" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			<h1 class="text-center uk-text-bold">Let's Keep in Touch</h1>
+			<p class="lead mb-2"></span><span uk-icon="icon: phone; ratio: 2"></span>&nbsp; Phone Number: 647-581-2133</p>
+			<p class="lead mt-0"></span><span uk-icon="icon: mail; ratio: 2"></span>&nbsp;&nbsp;Email: emanuel3@my.centennialcollege.ca</p> 
+		</div>
+	</div>
+    
+	<div style="background-color: #464648">
+		<div id="Copyright" class="uk-container py-3  text-white">
+			<p>&copy; Copyright 2020 Erwin Joshua Manuel - COMP213 - Winter 2020</p>
+		</div>
+	</div>
+
+	<!-- BEGIN SECTION: MODALS -->
+	<!-- BEGIN SECTION: BMI MODAL -->
+	<div id="modal-center" class="uk-flex-top" uk-modal>
+		<div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+			<div class="uk-modal-header">
+				<h2 class="uk-modal-title">BMI Calculator</h2>
+			</div>
+			<ul class="uk-subnav uk-subnav-pill" uk-switcher>
+				<li><a href="#">Imperial BMI Calculator</a></li>
+				<li><a href="#">Metric BMI Calculator</a></li>
+			</ul>
+			
+			<ul class="uk-switcher uk-margin">
+				<li>
+					<div class="uk-modal-body">
+							<form class="uk-form-stacked">
+								
+								<div class="uk-margin-small">
+									<h4 class="mb-2">General Info: </h4>
+									<label class="uk-form-label" for="optImpGender">Select</label>
+									<div class="uk-form-controls">
+										<select class="uk-select" id="optImpGender" required>
+											<!-- <option disabled selected value> -- Select Gender -- </option> -->
+											<option value="Male">Male</option>
+											<option value="Female">Female</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="uk-margin-small">
+									<label class="uk-form-label" for="txtImpAge">Age:</label>
+									<div class="uk-form-controls">
+										<input class="uk-input" id="txtImpAge" type="number" max="120" min="0" required>
+									</div>
+								</div>
+
+								<div class="uk-margin my-2">
+									<h4 class="mb-2">Your Height: </h4>
+									<label class="uk-form-label" for="txtFeet">Feet:</label>
+									<div class="uk-form-controls">
+										<input class="uk-input" id="txtFeet" type="number" min="0" required>
+									</div>
+								</div>
+								
+								<div class="uk-margin-small">
+									<label class="uk-form-label" for="txtInches">Inches:</label>
+									<div class="uk-form-controls">
+										<input class="uk-input" id="txtInches" type="number" max="11.99999999" min="0" step="0.01" required>
+									</div>
+								</div>
+
+								<div class="uk-margin">
+									<h4 class="mb-2">Your Weight: </h4>
+									<label class="uk-form-label" for="txtStones">Stones:</label>
+									<div class="uk-form-controls">
+										<input class="uk-input" id="txtStones" type="number" min="0" required>
+									</div>
+								</div>
+
+								<div class="uk-margin-small">
+									<label class="uk-form-label" for="txtPounds">Pounds:</label>
+									<div class="uk-form-controls">
+										<input class="uk-input" id="txtPounds" type="number" max="13.99999999" step="0.01" min="0" required>
+									</div>
+								</div>
+
+								<div class="uk-margin">
+									<h4 class="mb-2">Your Activity Level: </h4>
+									<div class="uk-form-label">How active are you?</div>
+									<div class="uk-form-controls">
+										<label>
+											<input class="uk-radio opImpActLevel" type="radio" name="opImpActLevel" value="Sed" required> Sedentary
+										</label><br>
+										<label>
+											<input class="uk-radio opImpActLevel" type="radio" name="opImpActLevel" value="ModAct" required> Moderately Active
+										</label><br>
+										<label>
+											<input class="uk-radio opImpActLevel" type="radio" name="opImpActLevel" value="VigAct" required> Vigorously Active
+										</label>
+									</div>
+								</div>
+								<button id="btnCalImpBMI" class="uk-button uk-button-primary uk-width-1-1 " type="submit" onclick="calculateImpBMI()">Calculate BMI</button>
+							</form>	
+						
+
+						<div class="uk-margin">
+							<h2 class="my-2">Results: </h2>
+							<div class="uk-margin-small">
+								<label class="uk-form-label" for="txtImpBMIResults">BMI Score:</label>
+								<div class="uk-form-controls">
+									<input class="uk-input" id="txtImpBMIResults" type="text" disabled>
+								</div>
+							</div>
+							<div class="uk-margin-small">
+								<label class="uk-form-label" for="txtImpEnerExpResults">Daily Calorie Intake:</label>
+								<div class="uk-form-controls">
+									<input class="uk-input" id="txtImpEnerExpResults" type="text" disabled>
+								</div>
+							</div>
+						</div>
+
+					</div>	
+				</li>	
+				<li>
+					<div class="uk-modal-body">
+							<form class="uk-form-stacked">
+								
+								<div class="uk-margin-small">
+									<h4 class="mb-2">General Info: </h4>
+									<label class="uk-form-label" for="optMetGender">Select</label>
+									<div class="uk-form-controls">
+										<select class="uk-select" id="optMetGender" required>
+											<!-- <option disabled selected value> -- Select Gender -- </option> -->
+											<option value="Male">Male</option>
+											<option value="Female">Female</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="uk-margin-small">
+									<label class="uk-form-label" for="txtMetAge">Age:</label>
+									<div class="uk-form-controls">
+										<input class="uk-input" id="txtMetAge" type="number" max="120" min="0" required>
+									</div>
+								</div>
+
+								<div class="uk-margin my-2">
+									<h4 class="mb-2">Your Height: </h4>
+									<label class="uk-form-label" for="txtCm">Centimetres:</label>
+									<div class="uk-form-controls">
+										<input class="uk-input" id="txtCm" type="number" min="0" required>
+									</div>
+								</div>
+
+								<div class="uk-margin">
+									<h4 class="mb-2">Your Weight: </h4>
+									<label class="uk-form-label" for="txtKilos">Kilograms:</label>
+									<div class="uk-form-controls">
+										<input class="uk-input" id="txtKilos" type="number" min="0" required>
+									</div>
+								</div>
+
+								<div class="uk-margin">
+									<h4 class="mb-2">Your Activity Level: </h4>
+									<div class="uk-form-label">How active are you?</div>
+									<div class="uk-form-controls">
+										<label>
+											<input class="uk-radio opMetActLevel" type="radio" name="opMetActLevel" value="Sed" required> Sedentary
+										</label><br>
+										<label>
+											<input class="uk-radio opMetActLevel" type="radio" name="opMetActLevel" value="ModAct" required> Moderately Active
+										</label><br>
+										<label>
+											<input class="uk-radio opMetActLevel" type="radio" name="opMetActLevel" value="VigAct" required> Vigorously Active
+										</label>
+									</div>
+								</div>
+								
+								<button id="btnCalMetBMI" class="uk-button uk-button-primary uk-width-1-1 " type="button" onclick="calculateMetBMI()">Calculate BMI</button>
+
+								<div class="uk-margin">
+									<h2 class="my-2">Results: </h2>
+									<div class="uk-margin-small">
+										<label class="uk-form-label" for="txtMetBMIResults">BMI Score:</label>
+										<div class="uk-form-controls">
+											<input class="uk-input" id="txtMetBMIResults" type="text" disabled>
+										</div>
+									</div>
+									<div class="uk-margin-small">
+										<label class="uk-form-label" for="txtMetEnerExpResults">Daily Calorie Intake:</label>
+										<div class="uk-form-controls">
+											<input class="uk-input" id="txtMetEnerExpResults" type="text" disabled>
+										</div>
+									</div>
+								</div>
+
+							</form>	
+
+					</div>
+				</li>
+			</ul>
+			
+			<div class="uk-modal-footer uk-text-right">
+				<button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+				
+			</div>
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+		</div>
+	</div>
+	<!-- END SECTION: BMI MODAL -->
+
+	<!-- END SECTION: MODAL -->
+
+
+	<!-- Bootstrap 4 JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+	<!-- WEEK2 ASSIGNMENT 1 SCRIPT -->
+	<script src="resources/scripts/Week2_Assignment1.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Created by: Erwin Joshua Manuel - Created on: Jun 15, 2020 -->
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dynamic Table Generator</title>
+    
+    <!-- Bulma CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+    <!-- FAVICON LINK -->
+	<link rel="icon" href="resources/favicon/art.png" type="image/png">
+
+</head>
+<body class="scale-in-tl">
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Hello World
+            </h1>
+            <p class="subtitle">
+                Let's Generate a Table <strong>Together</strong>!
+            </p>
+        </div>
+    </section>
+
+      <section class="hero is-medium is-primary is-bold">
+        <div id="tableArea" class="container py-6">
+
+            <table id="ExampleTable" class="table table-color"> 
+                <script>
+                    for (let i = 1; i <= 15; i++) {
+                        document.write("<tr>");
+                            for (let j = 1; j <= 15; j++) {
+                                document.write("<td>");
+                                    document.write(i + "," + j);
+                                document.write("</td>");
+                            }
+                        document.write("</tr>");
+                    }
+                </script>
+            </table>
+
+        </div>
+      </section>
+      
+      <!-- Link to Font Awesome Icons -->
+      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+      <!-- Link to jQuery -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+      <!-- Link to Custom JS Script -->
+      <script src="resources/scripts/Assignment3_Close.js"></script>
+
+</body>
+</html>

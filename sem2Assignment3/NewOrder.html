@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- Created by: Erwin Joshua Manuel - Created on: Jul 20, 2020 -->
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Lunch Menu</title>
+
+	<!-- Bootstrap 4 CSS -->
+	<link rel="stylesheet" 
+		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+		  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+		  crossorigin="anonymous">
+
+  	<!-- UIKit CSS -->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
+
+      <!-- CUSTOM CSS -->
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="resources/NewOrder.css">
+
+    <!-- FAVICON LINK -->
+	<link rel="icon" href="resources/favicon/art.png" type="image/png">
+
+</head>
+<body uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
+    <div class="uk-container">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left">
+        
+                <ul class="uk-navbar-nav" id="navMenu">
+                    <li class="uk-active"><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Assignment2.html">Order</a></li>
+                    <li><a href="#" onclick="genTable()">Schedule</a></li>
+                    <li><a href="Assignment1.html" >BMR</a></li>
+                    <li><a href="Assignment5.html" >Game</a></li>
+                    <li><a href="Gallery.html" >Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav" id="navMenu">
+                    <li><a href="Membership.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="uk-container py-0">
+        <div class="uk-child-width-expand@s my-0" uk-grid>
+            <div>
+               
+            </div>
+            <div>
+                
+            </div>
+           
+            <div>
+                <h1 class="restName"  lang="jp">爽やかな 
+                    <span style="font-size: 28px">涼しい</span>
+                    <span style="font-size: 28px">清々しい</span>
+                    <span style="font-size: 28px">さっぱり</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-container mb-5">
+        <h1 class="uk-text-center mb-0">S A W A Y A K A N A</h1>
+        <h2 class="uk-text-center uk-text-light mt-0">
+            <span>Authentic&nbsp;</span>
+            <span>Japanese&nbsp;</span>
+            <span>Food</span>
+        </h2>
+        <h3 class="uk-text-center uk-text-light mt-0">
+            Enjoy some of the best Japanese cuisine in the GTA here. 
+        </h3>
+        <h3 class="uk-text-center uk-text-light mt-0">
+            From cool refreshing dishes like sushi and sashimi to heart-warming ones like dons and bento sets, our chefs aim to create food experiences that delight your palate.
+        </h3>
+        <h4 class="uk-text-center uk-text-light "><strong>Note:</strong> With the ongoing COVID-19 Pandemic, guests are advised to order here in advance.</h4>
+    </div>
+
+    <div class="mb-5 uk-container" >
+        <h1 class="uk-text-center ">M E N U</h1>
+        <div class="uk-child-width-1-4@s" uk-grid>
+            <div>
+               <img src="resources/newOrder/SushiSetC.jpg" alt="">
+               <input id="SushA" class="uk-checkbox" type="checkbox" onchange="Compute()"> 
+               <span>Sushi Set A&nbsp;&nbsp;$10.00</span>
+            </div>
+            <div>
+                <img src="resources/newOrder/SushiSetB.jpg" alt="">
+               <input id="SushB" class="uk-checkbox" type="checkbox" onchange="Compute()"> 
+               <span>Sushi Set B&nbsp;&nbsp;$10.00</span>
+            </div>
+            <div>
+                <img src="resources/newOrder/SushiSetA.jpg" alt="">
+               <input id="SushC" class="uk-checkbox" type="checkbox" onchange="Compute()"> 
+               <span>Sushi Set C&nbsp;&nbsp;$10.00</span>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td><h4 class="uk-text-light my-0">Item Total:</h4></td>
+                        <td><h4 class="uk-text-light my-0 uk-text-right"><span id="itemTot">&nbsp;&nbsp;$0.00</span></h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4 class="uk-text-light my-0">Tax:</h4></td>
+                        <td><h4 class="uk-text-light my-0 uk-text-right"><span id="Tax">&nbsp;&nbsp;$0.00</span></h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4 class="uk-text-light my-0">Total With Tax:</h4></td>
+                        <td><h4 class="uk-text-light my-0 uk-text-right"><span id="totTax">&nbsp;&nbsp;$0.00</span></h4></td>
+                    </tr>
+                </table>  
+            </div>
+            <div>
+                <img src="resources/newOrder/DonB.jpg" alt="">
+                <input id="BeefDon" class="uk-checkbox" type="checkbox" onchange="Compute()">
+                <span>Beef Don&nbsp;&nbsp;$8.00</span>
+             </div>
+             <div>
+                 <img src="resources/newOrder/DonA.jpg" alt="">
+                <input id="KatsuDon" class="uk-checkbox" type="checkbox" onchange="Compute()"> 
+                <span>Katsu Don&nbsp;&nbsp;$8.00</span>
+             </div>
+             <div>
+                 <img src="resources/newOrder/DonC.jpg" alt="">
+                <input id="OyakoDon" class="uk-checkbox" type="checkbox" onchange="Compute()"> 
+                <span>Oyako Don&nbsp;&nbsp;$8.00</span>
+             </div>
+             <div>
+                 
+             </div>
+             <div>
+                <img src="resources/newOrder/SashimiSetA.jpg" alt="">
+                <input id="SashA" class="uk-checkbox" type="checkbox" onchange="Compute()"> 
+                <span>Sashimi Set A&nbsp;&nbsp;$10.00</span>
+             </div>
+             <div>
+                 <img src="resources/newOrder/SashimiSetB.jpg" alt="">
+                <input id="SashB" class="uk-checkbox" type="checkbox" onchange="Compute()"> 
+                <span>Sashimi Set B&nbsp;&nbsp;$10.00</span>
+             </div>
+             <div>
+                 <img src="resources/newOrder/bento.gif" alt="">
+                <input id="Bento" class="uk-checkbox" type="checkbox" onchange="Compute()"> 
+                <span>Daily Bento Set&nbsp;&nbsp;$15.00</span>
+             </div>
+             <div>
+                 
+             </div>
+             
+        </div>
+    </div>
+
+    <!-- Bootstrap 4 JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+	<!-- CUSTOM SCRIPTS -->
+    <script src="resources/scripts/Museum-Wide-Script.js"></script>
+    <script src="resources/scripts/schedule.js"></script>
+    <script src="resources/scripts//NewOrder.js"></script>
+</body>
+</html>

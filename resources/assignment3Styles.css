@@ -1,0 +1,35 @@
+  		body h1{
+  			font-family: 'Marcellus SC', serif !important;
+  		}
+
+  		body p{
+  			font-family: 'Marcellus SC', serif !important;
+  		}
+
+  		ul li{
+  			font-family: 'Marcellus SC', serif !important;
+  		}
+
+  		.discover{
+  			font-size: 12px;
+  			font-family: 'Marcellus SC', serif !important;
+  			border-color: grey; 
+  			width: 150px; 
+  			height: 40px;
+  		}
+
+  		.product-card{
+  			cursor: pointer;
+  		}
+  		
+  		.uk-table{
+  			font-family: 'Marcellus SC', serif !important; 
+  		}
+
+  		h2{
+  			font-family: 'Marcellus SC', serif !important;
+  		}
+
+  		.black-background{
+  			background-color: black;
+  		}

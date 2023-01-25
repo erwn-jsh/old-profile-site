@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- Created by: Erwin Joshua Manuel - Created on: Jul 20, 2020 -->
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Membership Sign Up</title>
+
+	<!-- Bootstrap 4 CSS -->
+	<link rel="stylesheet" 
+		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+		  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+		  crossorigin="anonymous">
+
+  	<!-- UIKit CSS -->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
+
+  	<!-- CSS Removes Underline on a tag Hover -->
+	<link rel="stylesheet" href="resources/Membership.css">
+
+	<!-- FAVICON LINK -->
+	<link rel="icon" href="resources/favicon/art.png" type="image/png">
+
+</head>
+<body>
+
+	<div class="uk-container" uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: false">
+		<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+			<div class="uk-navbar-left">
+		
+				<ul class="uk-navbar-nav" id="navMenu">
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="About.html">About Us</a></li>
+					<li><a href="Assignment2.html">Order</a></li>
+					<li><a href="#" onclick="genTable()">Schedule</a></li>
+					<li><a href="Assignment1.html" >BMR</a></li>
+					<li><a href="Assignment5.html" >Game</a></li>
+					<li><a href="Gallery.html" >Gallery</a></li>
+				</ul>
+			</div>
+
+			<div class="uk-navbar-right">
+				<ul class="uk-navbar-nav" id="navMenu">
+					<li class="uk-active"><a href="Membership.html">Sign Up</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<main class="uk-container" > 
+
+		<div uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: false">	
+			<div class="my-5 text-center">
+				<h2>Museum Membership Sign Up</h2>
+				<p class="mt-0 lead">Get the fastest updates on our latest exhibtions by joining our exclusive museum membership program.</p>
+			</div>
+		</div>
+		
+		<div  uk-grid class="uk-child-width-expand@s ">
+			<div class="uk-width-1-4" uk-sticky="offset: 160" class="uk-sticky uk-active uk-sticky-below uk-sticky-fixed" style="position: fixed; top: 160px; width: 200px;">
+		        <div class="uk-card uk-card-default uk-card-body" >
+		        	 <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+				        <li class="uk-nav-header mt-4">Navigation</li>
+				        <li><a href="#persInfo" uk-scroll>Personal Information</a></li>
+				        <li><a href="#resPlace" uk-scroll>Place of Residence</a></li>
+				        <li><a href="#accInfo" uk-scroll>Account Information</a></li>
+				        <li class="uk-nav-divider"></li>
+				        <li><a href="#upload" uk-scroll>Upload Application</a></li>
+				        <li><a href="Home.html">Return to Homepage</a></li>
+				    </ul>
+		        </div>
+		    </div>
+
+		    <div class="uk-width-3-4">
+				<form class="uk-form-stacked uk-margin-small" onsubmit="event.preventDefault(); Validate();" uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: false">
+
+			        <div id="persInfo" class="uk-card uk-card-default uk-card-body mb-3">
+			        	<h3 class="uk-card-title">Personal Information</h3>
+			        	
+					    <div class="uk-margin">
+					        <label class="uk-form-label uk-text-bold" for="txtFName">First Name</label>
+					        <div class="uk-form-controls">
+								<input class="uk-input" id="txtFName" name="txtFName" type="text" placeholder="John or Jane">
+								<p id="errFName" class="uk-text-small mt-1  mb-4 text-danger d-none">&nbsp; - ErrMSG</p>
+					        </div>
+						</div>
+						
+						<div class="uk-margin">
+					        <label class="uk-form-label uk-text-bold" for="txtLName">Last Name</label>
+					        <div class="uk-form-controls">
+								<input class="uk-input" id="txtLName" name="txtLName" type="text" placeholder="Smith">
+								<p id="errLName" class="uk-text-small mt-1  mb-4 text-danger d-none">&nbsp; - ErrMSG</p>
+					        </div>
+						</div>
+						
+						<div class="uk-margin">
+					        <label class="uk-form-label uk-text-bold" for="txtAge">Age</label>
+					        <div class="uk-form-controls">
+								<input class="uk-input" id="txtAge" name="txtAge" min="18" step="1" type="number" placeholder="Cannot be lower than 18">
+								<p id="errAge" class="uk-text-small mt-1  mb-4 text-danger d-none">&nbsp; - ErrMSG</p>
+					        </div>
+						</div>
+
+			    	</div>
+
+			    	<div id="resPlace" class="uk-card uk-card-default uk-card-body mb-3">
+			        	<h3 class="mb-0 uk-card-title">Place of Residence</h3>
+						
+						<div class="uk-margin">
+					        <label class="uk-form-label uk-text-bold" for="txtAddress">Address</label>
+					        <div class="uk-form-controls">
+								<input class="uk-input" id="txtAddress" name="txtAddress" type="text" placeholder="Street Name and Number / Apartment Number">
+								<p id="errAddress" class="uk-text-small mt-1  mb-4 text-danger d-none">&nbsp; - ErrMSG</p>
+					        </div>
+						</div>
+
+					    <div class="uk-margin">
+					        <label class="uk-form-label uk-text-bold" for="txtCity">City</label>
+					        <div class="uk-form-controls">
+								<input class="uk-input" id="txtCity" name="txtCity" type="text" placeholder="Toronto, Ottawa, Vancouver, Montreal... ">
+								<p id="errCity" class="uk-text-small mt-1  mb-4 text-danger d-none">&nbsp; - ErrMSG</p>
+					        </div>
+						</div>
+
+						<div class="uk-margin">
+					        <label class="uk-form-label uk-text-bold" for="txtPostCode">Postal Code</label>
+					        <div class="uk-form-controls">
+								<input class="uk-input" id="txtPostCode" name="txtPostCode" type="text" placeholder="Canadian Postal Codes Only e.g. A1A1A1">
+								<p id="errPostCode" class="uk-text-small mt-1  mb-4 text-danger d-none">&nbsp; - ErrMSG</p>
+					        </div>
+						</div>
+
+						<div class="uk-margin">
+					        <label class="uk-form-label uk-text-bold" for="lstProv">Province</label>
+					        <div class="uk-form-controls">
+					            <select class="uk-select" id="lstProv" name="lstProv">
+					            	<option hidden disabled selected value> -- Select an Option -- </option>
+					                <option value="AB">Alberta</option>
+					                <option value="BC">British Columbia</option>
+									<option value="MB">Manitoba</option>
+									<option value="ON">Ontario</option>
+									<option value="QC">Quebec</option>
+									<option value="SK">Saskatchewan</option>
+								</select>
+								<p id="errProv" class="uk-text-small mt-1  mb-4 text-danger d-none">&nbsp; - ErrMSG</p>
+					        </div>
+						</div>   
+			    	</div>
+
+			    	<div id="accInfo" class="uk-card uk-card-default uk-card-body mb-3">
+			        	<h3 class="mb-0 uk-card-title">Account Information</h3>
+						
+						<div class="uk-margin">
+					        <label class="uk-form-label uk-text-bold" for="txtEmail">Email</label>
+					        <div class="uk-form-controls">
+								<input class="uk-input" id="txtEmail" name="txtEmail" type="email" placeholder="account@EmailService.com">
+								<p id="errEmail" class="uk-text-small mt-1  mb-4 text-danger d-none">&nbsp; - ErrMSG</p>
+					        </div>
+						</div>
+
+						<div class="uk-margin">
+					        <label class="uk-form-label uk-text-bold" for="txtPass">Password</label>
+					        <div class="uk-form-controls">
+								<input class="uk-input" id="txtPass" name="txtPass" type="password" placeholder="Minimum 6 Chars, 1 Capital Letter, 1 Lower Case Letter, 1 Special Char, and 1 Number">
+								<p id="errPass" class="uk-text-small mt-1  mb-4 text-danger d-none">&nbsp; - ErrMSG</p>
+					        </div>
+						</div>
+
+						<div class="uk-margin">
+					        <label class="uk-form-label uk-text-bold" for="txtPassCon">Confirm Password</label>
+					        <div class="uk-form-controls">
+								<input class="uk-input" id="txtPassCon" name="txtPassCon" type="password" placeholder="Must Match Password">
+								<p id="errPassCon" class="uk-text-small mt-1  mb-4 text-danger d-none">&nbsp; - ErrMSG</p>
+					        </div>
+						</div>
+					    
+			    	</div>
+
+			    	<div id="upload" class="uk-card uk-card-default uk-card-body mb-3">
+			        	<h3 class="mb-0 uk-card-title">You're Almost Done!</h3>
+			        	
+					    <div class="uk-margin">
+					        <button class="uk-button uk-button-default" type="submit" name="btnSubmit">
+					        	<span uk-icon="upload"></span>&nbsp;Become An Member
+					    	</button>
+					    	<button class="uk-button uk-button-default" type="reset" name="btnReset" value="Start Again" onclick="Reset()">
+					    		<span uk-icon="file-edit"></span>&nbsp;Start Again
+					    	</button>
+					    </div>
+			    	</div>
+
+		    	</form>
+		    </div>
+
+		</div>
+	</main>
+
+	<footer>
+		<div>
+			<div id="Contact" class="uk-container py-5" uk-scrollspy="cls:uk-animation-fade; repeat: false">
+				<h1 class="text-center uk-text-bold py-5"></span>Your Participation is Appreciated</h1>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Bootstrap 4 JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+	<!-- CUSTOM SCRIPTS -->
+	<script src="resources/scripts/Membership.js"></script>
+    <script src="resources/scripts/Museum-Wide-Script.js"></script>
+    <script src="resources/scripts/schedule.js"></script>
+	
+
+</body>
+</html>

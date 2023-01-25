@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Created by: Erwin Joshua Manuel - Created on: Jun 15, 2020 -->
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dynamic Table Generator</title>
+    
+    <!-- Bulma CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+    <!-- FAVICON LINK -->
+	<link rel="icon" href="resources/favicons/table.png" type="image/png">
+
+</head>
+<body class="scale-in-tl">
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Hello World
+            </h1>
+            <p class="subtitle">
+                Let's Generate a Table <strong>Together</strong>!
+            </p>
+        </div>
+    </section>
+
+    <section class="section is-medium">
+        <div class="container">
+            <form action="#" onsubmit="event.preventDefault();">
+                <div class="field">
+                    <div class="control has-icons-left has-icons-right">
+                            <input id="txtRows" class="input is-medium" type="number" placeholder="Number of Rows" required>
+                            <span class="icon is-left">
+                                <i class="fas fa-table fa-sm"></i>
+                            </span>
+                            <span class="icon is-right">
+                                <i class="fas fa-check fa-sm"></i>
+                            </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control has-icons-left has-icons-right">
+                        <input id="txtCols" class="input is-medium" type="number" placeholder="Number of Columns" required>
+                        <span class="icon is-left">
+                            <i class="fas fa-table fa-sm"></i>
+                        </span>
+                        <span class="icon is-right">
+                            <i class="fas fa-check fa-sm"></i>
+                        </span>
+                    </div>
+                  </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-link" id="btnSubmit" type="submit" onclick="GenTable()">Submit</button>
+                    </div>
+                    <div class="control">
+                        <a class="button is-link is-light" href="index.html">
+                            Return to Home
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </section>
+
+      <section class="hero is-medium is-primary is-bold">
+        <div id="tableArea" class="container py-6">
+
+            <table id="ResultTable" class="table table-color"> 
+
+            </table>
+
+            <!-- <table id="ExampleTable" class="table table-color"> 
+                <script>
+                    for (let i = 1; i <= 15; i++) {
+                        document.write("<tr>");
+                            for (let j = 1; j <= 15; j++) {
+                                document.write("<td>");
+                                    document.write(i + "," + j);
+                                document.write("</td>");
+                            }
+                        document.write("</tr>");
+                    }
+                </script>
+            </table> -->
+
+            <script>
+                // document.write("<table class=" + "table" +">")
+                //     document.write("<th><abbr title=" + "Position"+ ">Pos</abbr></th>")
+                //     document.write("<th>Team</th>")
+                //     document.write("<th><abbr title=" + "Played" + ">Pld</abbr></th>")
+                //     document.write("<th><abbr title=" + "Won" + ">W</abbr></th>")
+                //     document.write("</tr>")
+                // document.write("<table class=" + "table" +">");
+                // for (let i = 0; i <= rows; i++) {
+                //     document.write("<tr>");
+                //     for (let j = 0; j <= cols; j++) {
+                //         document.write("<td>");
+                //             document.write(i + "," + j);
+                //         document.write("</td>");
+                //     }
+                //     document.write("</tr>");
+                // }
+                // document.write("</table>");
+
+                // document.write("<table class=" + "table is-hoverable " + "id=ExampleTable" + ">");
+                // for (let i = 1; i <= 15; i++) {
+                //     document.write("<tr>");
+                //     for (let j = 1; j <= 15; j++) {
+                //         document.write("<td>");
+                //             document.write(i + "," + j);
+                //         document.write("</td>");
+                //     }
+                //     document.write("</tr>");
+                // }
+                // document.write("</table>");
+            </script>
+        </div>
+      </section>
+      
+      <!-- Link to Font Awesome Icons -->
+      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+      <!-- Link to jQuery -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+      <!-- Link to Custom JS Script -->
+      <script src="resources/scripts/Week2_Assignment2.js"></script>
+
+</body>
+</html>

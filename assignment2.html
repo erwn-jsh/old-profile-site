@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- Created by: Erwin Joshua Manuel; Created on January 22, 2020 -->
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title>Marine Conservation Sites</title>
+
+	<!-- Bootstrap 4 CSS -->
+	<link rel="stylesheet" 
+		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+		  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+		  crossorigin="anonymous">
+
+  	<!-- UIKit CSS -->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
+
+
+    <!-- CSS Removes Underline on a tag Hover -->
+    <style type="text/css">
+        a:hover{
+            text-decoration: none !important;
+        }
+    </style>
+
+    <!-- FAVICON LINK -->
+	<link rel="icon" href="resources/favicons/conservation.png" type="image/png">
+
+</head>
+
+<body>
+
+	<header style="background-color: #464648">
+		<div id="Header" class="uk-container">
+			<a href="https://www.centennialcollege.ca/" target="_blank">
+                <h1 class="text-uppercase mt-3 mb-0 text-bold text-white"><strong>Centennial College</strong></h1>
+            </a>
+            <a href="https://www.centennialcollege.ca/programs-courses/schools/school-of-engineering-technology-and-applied-science/" target="_blank">
+                <h3 class="text-uppercase mb-3 mt-0 text-white" style="color: #D4E038 !important;">School of Engineering Technology and Applied Science</h3>
+            </a>
+		</div>
+	</header>
+
+    <div class="bg-light" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-container navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html#ConAreas">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Introduction" uk-scroll>Introduction <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#relatedOrgs" uk-scroll>Related Organizations</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <iframe width="100%" height="576" src="https://maphub.net/embed/81054?legend=1&panel=1" frameborder="0"></iframe>
+
+<!-- 	<div id="Video" class="">
+        <div class="position-absolute w-100 h-100" style="margin-top: 18%; margin-bottom: 18%">
+            <div class="align-middle" uk-scrollspy="cls: uk-animation-fade; target: .display-4; delay: 500; repeat: false">
+                <h1 class="display-4 text-center my-0" style="color: #D4E038">Visible from Space</h1>
+                <h1 class="display-4 text-center my-0" style="color: #D4E038">The World's Largest Reef System</h1>
+                <h1 class="display-4 text-center uk-text-bold my-5" style="color: #D4E038">Now Under Threat</h1>    
+            </div>          
+        </div>       
+        <video src="resources/GreatBarrierReef.mp4" type="video/mp4" muted autoplay loop>
+    </div> -->
+
+    <div style="background-color: #D4E038">
+		<div id="Introduction" class="uk-container py-5" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			<h1 class="text-center my-0 pt-4 uk-text-bold">The Top 5 Largest Marine Conservation Areas in the World</h1>
+			
+			<blockquote>
+                &quot;Advice from the Ocean:
+                    Be shore of yourself. Come out of your shell.
+                    Take time to relax and coast. Avoid pier pressure.
+                    Sea life's beauty. Don't get tide down.
+                    Make waves!&quot; <br>~~~~ Author Unknown
+            </blockquote>
+
+			<p class="text-justify lead my-0 pb-4">The World Database on Protected Areas (WDPA) is compiled and managed by the World Conservation Monitoring Centre, an executive agency of the United Nations Environment Programme. It uses the IUCN and CBD definitions of protected areas to determine whether a site should be included in the WDPA. The top five largest protected areas in the October 2017 edition of the WDPA are mapped above, in order of size as reported by the relevant data provider. All are marine protected areas except for Northeast Greenland National Park, which is mostly terrestrial but also has a marine component.</p>
+		</div>
+	</div>
+
+	<div id="relatedOrgs" class="uk-container mb-5">
+		<h1 class="text-center mt-5 uk-text-bold" uk-scrollspy="cls:uk-animation-fade; repeat: true ">Related Organizations</h1>
+		<div class="uk-child-width-expand@s uk-text-center uk-grid-small" uk-grid uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
+
+            <a href="https://www.worldwildlife.org/" target="_blank">
+                <div>
+                    <div class="uk-card uk-card-hover uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="https://pbs.twimg.com/profile_images/1166038751203790850/73ZI_4Vl_400x400.png">
+                        </div>
+                        <div class="uk-card-body lead">
+                            World Wildlife Fund
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.opsociety.org/" target="_blank">
+              <div>
+                  <div class="uk-card uk-card-hover uk-card-default">
+                     <div class="uk-card-media-top">
+                        <img src="https://yt3.ggpht.com/a/AGF-l797I5iG_LhgcEXB6iR4FpPydPRCZRvnLbJuEQ=s288-c-k-c0xffffffff-no-rj-mo">
+                     </div>
+                     <div class="uk-card-body lead">
+                         Oceanic Preservation Society
+                     </div>
+                  </div>
+              </div>
+            </a>
+
+            <a href="https://coral.org/" target="_blank">
+                <div>
+                   <div class="uk-card uk-card-hover uk-card-default">
+                         <div class="uk-card-media-top">
+                            <img src="https://pbs.twimg.com/profile_images/881983346758238209/jhDfI-sM_400x400.jpg">
+                         </div>
+                         <div class="uk-card-body lead">
+                            Coral Reef Alliance
+                         </div>
+                  </div>
+                </div>
+            </a>
+            
+		</div>
+
+		<div class="uk-child-width-expand@s uk-text-center uk-grid-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true" uk-grid>
+        
+            <a href="https://oceanconservancy.org/">
+                <div>
+                    <div class="uk-card uk-card-hover uk-card-default" target="_blank">
+                        <div class="uk-card-media-top">
+                            <img src="https://oceanconservancy.org/wp-content/uploads/2017/02/fb-share.png">
+                        </div>
+                        <div class="uk-card-body lead">
+                            Ocean Conservancy
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.greenpeace.org/international/" target="_blank">
+                <div>
+                    <div class="uk-card uk-card-hover uk-card-default">
+                         <div class="uk-card-media-top">
+                            <img src="https://greenangels.com/sites/default/files/styles/large/public/organizations/logo/Greenpeace-logo_0.png?itok=IRdEhFPO">
+                         </div>
+                         <div class="uk-card-body lead">
+                            Greenpeace
+                         </div>
+                    </div>
+                </div>
+            </a>
+            
+    		<a href="https://oceana.org/" target="_blank">
+                <div>
+                    <div class="uk-card uk-card-hover uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="http://highseasalliance.org/sites/highseasalliance.org/files/oceana-320.jpg">
+                        </div>
+                        <div class="uk-card-body lead">
+                            Oceana
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+		</div>
+	</div>
+
+    <footer style="background-color: #464648">
+        <div id="Copyright" class="uk-container py-3  text-white">
+            <p>&copy; Copyright 2020 Erwin Joshua Manuel - COMP213 - Assignment 2</p>
+        </div>
+    </footer>
+
+
+	<!-- Bootstrap 4 JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- Created by: Erwin Joshua Manuel - Created on: Mar 12, 2020 -->
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Instructor Evaluation</title>
+
+	<!-- Bootstrap 4 CSS -->
+	<link rel="stylesheet" 
+		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+		  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+		  crossorigin="anonymous">
+
+  	<!-- UIKit CSS -->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
+
+  	<!-- CSS Removes Underline on a tag Hover -->
+    <style type="text/css">
+        a:hover{
+            text-decoration: none !important;
+        }
+	</style>
+	
+	<!-- FAVICON LINK -->
+	<link rel="icon" href="resources/favicons/cencol.png" type="image/png">
+
+</head>
+<body>
+
+	<header style="background-color: #464648;">
+		<div id="Header" class="uk-container">
+            <a href="https://www.centennialcollege.ca/" target="_blank">
+                <h1 class="text-uppercase mt-3 mb-0 text-bold text-white"><strong>Centennial College</strong></h1>
+            </a>
+            <a href="https://www.centennialcollege.ca/programs-courses/schools/school-of-engineering-technology-and-applied-science/" target="_blank">
+                <h3 class="text-uppercase mb-3 mt-0 text-white" style="color: #D4E038 !important;">School of Engineering Technology and Applied Science</h3>
+            </a>
+		</div>
+	</header>
+
+	<main class="uk-container">
+
+		<div class="my-5 text-center">
+			<h2>Continuing Education Course / Instructor Evaluation</h2>
+			<p class="mb-0 lead"><strong>Instructions</strong></p>
+			<p class="mt-0 lead">Please read each statement carefully and consider each one individually. Give only <strong>one answer</strong> for each question.</p>
+		</div>
+		
+
+		<div  uk-grid class="uk-child-width-expand@s ">
+			<div class="uk-width-1-4 uk-visible@l" uk-sticky="offset: 160" class="uk-sticky uk-active uk-sticky-below uk-sticky-fixed" style="position: fixed; top: 160px; width: 200px;">
+		        <div class="uk-card uk-card-default uk-card-body" >
+		        	 <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+				        <li class="uk-nav-header mt-4">Navigation</li>
+				        <li><a href="#courseInfo" uk-scroll>Course Information</a></li>
+				        <li><a href="#instructor" uk-scroll>Instructor</a></li>
+				        <li><a href="#course" uk-scroll>Course</a></li>
+				        <li><a href="#genInfo" uk-scroll>General Information</a></li>
+				        <li><a href="#comSug" uk-scroll>Comments & Suggestions</a></li>
+				        <li class="uk-nav-divider"></li>
+				        <li><a href="#upload" uk-scroll>Upload Questionnaire</a></li>
+				        <li class="uk-nav-divider"></li>
+				        <li><a href="https://www.centennialcollege.ca/continuing_education">Contact Us</a></li>
+				        <li><a href="mailto:continuingeducation@centennialcollege.ca">Email Us</a></li>
+				        <li class="uk-nav-divider"></li>
+				        <li><a href="index.html#CentForm">Return to Homepage</a></li>
+				    </ul>
+		        </div>
+		    </div>
+
+		    <div class="uk-width-3-4">
+				<form class="uk-form-stacked uk-margin-small" method="post" action="mailto:dummyaccount@dummyserver.com">
+
+			        <div id="courseInfo" class="uk-card uk-card-default uk-card-body mb-3"  uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			        	<h3 class="uk-card-title">Course Information</h3>
+			        	
+					    <div class="uk-margin">
+					        <label class="uk-form-label" for="txtcourseName">Course Name/Code</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input" id="txtcourseName" name="txtcourseName" type="text" placeholder="e.g. COMP213 or Web Programming">
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <label class="uk-form-label" for="lstSemester">Select Semester</label>
+					        <div class="uk-form-controls">
+					            <select class="uk-select" id="lstSemester" name="lstSemester">
+					            	<option hidden disabled selected value> -- Select an Option -- </option>
+					                <option value="Fall">Fall</option>
+					                <option value="Spring">Winter</option>
+					                <option value="Spring/Summer">Spring/Summer</option>
+					            </select>
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <label class="uk-form-label" for="txtInstructor">Instructor Name</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input" id="txtInstructor" name="courseName" type="text" placeholder="e.g. John/Jane Doe">
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <label class="uk-form-label" for="numCourseYear">Year</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input" id="numCourseYear" name="numCourseYear" type="number" min="1966" max="2020" placeholder="Key in a year betwen 1966 - 2020">
+					        </div>
+					    </div>
+			    	</div>
+
+			    	<div id="instructor" class="uk-card uk-card-default uk-card-body mb-3" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			        	<h3 class="mb-0 uk-card-title">Instructor</h3>
+			        	<p class="mt-0 lead">How would you rate the instructor/s':</p>
+			        	
+					    <div class="uk-margin">
+					        <div class="uk-form-label"><strong>knowledge </strong>of the subject</div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="E"> Excellent&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="G"> Good&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="F"> Fair&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorKnow" value="NS"> Not Satisfactory</label>
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <div class="uk-form-label"><strong>helpfulness?</strong></div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opInstructorHelp" value="E"> Excellent&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opInstructorHelp" value="G"> Good&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorHelp" value="F"> Fair&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorHelp" value="NS"> Not Satisfactory</label>
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <div class="uk-form-label"><strong>courtesy and respect </strong>for all students?</div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opInstructorResp" value="E"> Excellent&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opInstructorResp" value="G"> Good&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorResp" value="F"> Fair&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstructorResp" value="NS"> Not Satisfactory</label>
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <div class="uk-form-label"><strong>communication </strong>skills?</div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opInstrutorCom" value="E"> Excellent&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opInstrutorCom" value="G"> Good&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstrutorCom" value="F"> Fair&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInstrutorCom" value="NS"> Not Satisfactory</label>
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <div class="uk-form-label">overall <strong>performance?</strong></div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opInsturctorPerf" value="E"> Excellent&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opInsturctorPerf" value="G"> Good&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInsturctorPerf" value="F"> Fair&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opInsturctorPerf" value="NS"> Not Satisfactory</label>
+					        </div>
+					    </div>
+			    	</div>
+
+			    	<div id="course" class="uk-card uk-card-default uk-card-body mb-3" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			        	<h3 class="mb-0 uk-card-title">Course</h3>
+			        	
+					    <div class="uk-margin">
+					        <div class="uk-form-label">How would you rate the <strong>course materials?</strong></div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opCoursMat" value="E"> Excellent&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opCoursMat" value="G"> Good&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opCoursMat" value="F"> Fair&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opCoursMat" value="NS"> Not Satisfactory</label>
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <div class="uk-form-label">How much did the course meet your <strong>expectations?</strong></div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opCoursExp" value="E"> Excellent&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opCoursExp" value="G"> Good&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opCoursExp" value="F"> Fair&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opCoursExp" value="NS"> Not Satisfactory</label>
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <div class="uk-form-label">How would you rate this course(<strong>overall</strong>)?</div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opCoursRate" value="E"> Excellent&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opCoursRate" value="G"> Good&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opCoursRate" value="F"> Fair&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opCoursRate" value="NS"> Not Satisfactory</label>
+					        </div>
+					    </div>
+			    	</div>
+
+			    	<div id="genInfo" class="uk-card uk-card-default uk-card-body mb-3" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			        	<h3 class="mb-0 uk-card-title">General Information</h3>
+			        	
+					    <div class="uk-margin">
+					        <div class="uk-form-label">Was the <strong>course outline </strong>reviewed at the beginning course?</div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opGenOutline" value="Y"> Yes&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opGenOutline" value="N"> No&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opGenOutline" value="Not Sure"> Not Sure&nbsp;&nbsp;</label>
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <div class="uk-form-label">Would you <strong>recommend </strong>this course to a friend with the same interests?</div>
+					        <div class="uk-form-controls uk-form-controls-text">
+					            <label><input class="uk-radio" type="radio" name="opGenRec" value="Y"> Yes&nbsp;&nbsp;</label> 
+					            <label><input class="uk-radio" type="radio" name="opGenRec" value="N"> No&nbsp;&nbsp;</label>
+					            <label><input class="uk-radio" type="radio" name="opGenRec" value="Not Sure"> Not Sure&nbsp;&nbsp;</label>
+					        </div>
+					    </div> 
+			    	</div>
+
+			    	<div id="comSug" class="uk-card uk-card-default uk-card-body mb-3" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			        	<h3 class="mb-0 uk-card-title">Comments and Suggestions</h3>
+			        	
+					    <div class="uk-margin">
+					        <label class="uk-form-label" for="txtCoursHighlight">What is the <strong>best thing</strong> about this course?</label>
+					        <div class="uk-form-controls">
+					            <input class="uk-input" id="txtCoursHighlight" name="txtCoursHighlight" type="text" placeholder="e.g. instructors, materials, facilities etc.">
+					        </div>
+					    </div>
+
+					    <div class="uk-margin">
+					        <div class="uk-form-label">How could we <strong>improve</strong> this course?</div>
+					        <textarea class="uk-textarea" id="txtImprove" name="txtImprove" rows="5"></textarea>
+					    </div>
+
+					    <div class="uk-margin">
+					        <div class="uk-form-label">Other suggestions:</div>
+					        <textarea class="uk-textarea" id="txtSuggestions" name="txtSuggestions" rows="8"></textarea>
+					    </div> 
+			    	</div>
+
+			    	<div id="upload" class="uk-card uk-card-default uk-card-body mb-5" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+			        	<h3 class="mb-0 uk-card-title">You're Almost Done!</h3>
+			        	
+					    <div class="uk-margin">
+					        <button class="uk-button uk-button-default" type="submit" name="btnSubmit" value="Upload Questionnaire">
+					        	<span uk-icon="upload"></span>&nbsp;Upload Questionnaire
+					    	</button>
+					    	<button class="uk-button uk-button-default" type="reset" name="btnReset" value="Start Again">
+					    		<span uk-icon="file-edit"></span>&nbsp;Start Again
+					    	</button>
+					        <!-- <input class="uk-button uk-button-default" type="reset" name="btnReset" value="Start Again"> -->
+					    </div>
+			    	</div>
+
+		    	</form>
+		    </div>
+
+		</div>
+	</main>
+
+	<footer>
+		<div style="background-color: #D4E038">
+			<div id="Contact" class="uk-container py-5" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+				<h1 class="text-center uk-text-bold py-5"></span>Your Feedback is Appreciated</h1>
+			</div>
+		</div>
+	    
+		<div style="background-color: #464648">
+			<div id="Copyright" class="uk-container py-3  text-white">
+				<p>&copy; Copyright 2020 Erwin Joshua Manuel - COMP213 - Winter 2020</p>
+					<p>Find me on Social Media: &nbsp;&nbsp;
+						<span>
+							<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+							<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+							<a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+						</span>
+					</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Bootstrap 4 JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+	<!-- CUSTOM SCRIPTS -->
+	<script type="text/javascript">
+		//TO DISABLE DD/MM IN DATEPICKER
+		$(function() {
+		    $( "#courseYear" ).datepicker({dateFormat: 'yy'});
+		});​
+	</script>
+	
+
+</body>
+</html>
